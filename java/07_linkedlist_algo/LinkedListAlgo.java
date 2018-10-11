@@ -112,4 +112,20 @@ public class LinkedListAlgo {
         }
         return head;
     }
+
+    // 求中心节点
+    public static Node findMiddleNode(Node head) {
+        if (head == null)
+            return null;
+
+        Node fast = head;
+        Node slow = head;
+
+        while (fast.next != null && fast.next.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+
+        return slow;
+    }
 }
