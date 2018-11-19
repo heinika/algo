@@ -1,21 +1,21 @@
-package com.imagjs.plugin.algoproject.queue;
+package com.heinika.algoproject.queue;
 
-public class ArrayQueue {
+public class CircularQueue {
     private String[] items;
     private int n = 0;
     private int head = 0;
     private int tail = 0;
 
-    public ArrayQueue(int capactity) {
-        items = new String[capactity];
-        n = capactity;
+    public CircularQueue(int capacity) {
+        items = new String[capacity];
+        n = capacity;
     }
 
     public boolean enqueue(String item) {
-        if (tail == n)
+        if ((tail + 1) % n == head)
             return false;
         items[tail] = item;
-        ++tail;
+        tail = (tail + 1) % n;
         return true;
     }
 
@@ -23,7 +23,7 @@ public class ArrayQueue {
         if (head == tail)
             return null;
         String ret = items[head];
-        ++head;
+        head = (head + 1) % n;
         return ret;
     }
 

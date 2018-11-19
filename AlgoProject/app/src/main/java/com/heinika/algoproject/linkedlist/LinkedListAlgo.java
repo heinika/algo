@@ -1,4 +1,4 @@
-package com.imagjs.plugin.algoproject.linkedlist;
+package com.heinika.algoproject.linkedlist;
 
 public class LinkedListAlgo {
     public static class Node {

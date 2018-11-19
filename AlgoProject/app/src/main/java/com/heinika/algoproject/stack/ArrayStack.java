@@ -1,4 +1,4 @@
-package com.imagjs.plugin.algoproject.stack;
+package com.heinika.algoproject.stack;
 
 public class ArrayStack {
     private String[] items;

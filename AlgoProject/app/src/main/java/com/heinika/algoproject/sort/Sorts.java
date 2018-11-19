@@ -1,4 +1,4 @@
-package com.imagjs.plugin.algoproject.sort;
+package com.heinika.algoproject.sort;
 
 public class Sorts {
     // bubble sort
