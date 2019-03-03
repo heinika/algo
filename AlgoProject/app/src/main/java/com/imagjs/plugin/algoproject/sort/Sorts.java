@@ -29,13 +29,13 @@ public class Sorts {
             int value = a[i];
             int j = i - 1;
             for (; j >= 0; j--) {
-                if (a[i] < value) {
+                if (a[j] > value) {
                     a[j + 1] = a[j];
                 } else {
                     break;
                 }
             }
-            a[j] = value;
+            a[j+1] = value;
         }
         return a;
     }
