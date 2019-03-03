@@ -35,7 +35,7 @@ public class Sorts {
                     break;
                 }
             }
-            a[j+1] = value;
+            a[j + 1] = value;
         }
         return a;
     }
@@ -45,20 +45,14 @@ public class Sorts {
         if (a.length <= 1)
             return a;
         for (int i = 0; i < a.length - 1; i++) {
-            int min = a[i];
             int minIndex = i;
-            for (int j = i + 1; j < a.length - 1; j++) {
-                if (a[j] > a[j + 1]) {
-                    min = a[j + 1];
-                    minIndex = j + 1;
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[j] < a[minIndex]) {
+                    minIndex = j;
                 }
-                if (minIndex == i)
-                    continue;
-                if (a[i] > min) {
-                    int temp = a[i];
-                    a[i] = a[minIndex];
-                    a[j] = temp;
-                }
+                int temp = a[i];
+                a[i] = a[minIndex];
+                a[minIndex] = temp;
             }
 
         }
