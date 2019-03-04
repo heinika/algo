@@ -1,4 +1,4 @@
-package com.imagjs.plugin.algoproject.sort;
+package com.heinika.algoproject.sort;
 
 public class MergeSort {
     public static void mergeSort(int[] a, int n) {

@@ -1,16 +1,14 @@
-package com.imagjs.plugin.algoproject.linkedlist;
+package com.heinika.algoproject.linkedlist;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class SinglyLinkedListTest {
-    public SinglyLinkedList singlyLinkedList;
+    public com.imagjs.plugin.algoproject.linkedlist.SinglyLinkedList singlyLinkedList;
 
     @Before
     public void setup() {
-        singlyLinkedList = new SinglyLinkedList();
+        singlyLinkedList = new com.imagjs.plugin.algoproject.linkedlist.SinglyLinkedList();
         singlyLinkedList.insertToHead(7);
         singlyLinkedList.insertToHead(190);
     }

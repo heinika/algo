@@ -1,4 +1,4 @@
-package com.imagjs.plugin.algoproject.sort;
+package com.heinika.algoproject.sort;
 
 import org.junit.Test;
 
